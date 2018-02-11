@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		122A03DA2030B9EA001B9A38 /*  ConversionViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 122A03D92030B9EA001B9A38 /*  ConversionViewController .swift */; };
 		129B69522028056100C38CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B69512028056100C38CBD /* AppDelegate.swift */; };
-		129B69542028056100C38CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B69532028056100C38CBD /* ViewController.swift */; };
 		129B69572028056100C38CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129B69552028056100C38CBD /* Main.storyboard */; };
 		129B69592028056100C38CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129B69582028056100C38CBD /* Assets.xcassets */; };
 		129B695C2028056100C38CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129B695A2028056100C38CBD /* LaunchScreen.storyboard */; };
@@ -34,9 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		122A03D92030B9EA001B9A38 /*  ConversionViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ConversionViewController .swift"; sourceTree = "<group>"; };
 		129B694E2028056100C38CBD /* Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		129B69512028056100C38CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		129B69532028056100C38CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		129B69562028056100C38CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		129B69582028056100C38CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		129B695B2028056100C38CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				129B69512028056100C38CBD /* AppDelegate.swift */,
-				129B69532028056100C38CBD /* ViewController.swift */,
 				129B69552028056100C38CBD /* Main.storyboard */,
 				129B69582028056100C38CBD /* Assets.xcassets */,
 				129B695A2028056100C38CBD /* LaunchScreen.storyboard */,
 				129B695D2028056100C38CBD /* Info.plist */,
+				122A03D92030B9EA001B9A38 /*  ConversionViewController .swift */,
 			);
 			path = "Test Project";
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129B69542028056100C38CBD /* ViewController.swift in Sources */,
+				122A03DA2030B9EA001B9A38 /*  ConversionViewController .swift in Sources */,
 				129B69522028056100C38CBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +423,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HSCJQJ2VY6;
 				INFOPLIST_FILE = "Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NEIT.Test-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +439,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HSCJQJ2VY6;
 				INFOPLIST_FILE = "Test Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NEIT.Test-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
