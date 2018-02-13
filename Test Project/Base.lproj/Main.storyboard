@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2kM-4d-oj3">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="Test_Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,6 +54,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="hfm-ql-aGV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BPg-VI-Vw2"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtB-1p-B7H">
@@ -70,6 +71,7 @@
                             <outletCollection property="gestureRecognizers" destination="cLs-7w-xET" appends="YES" id="3Pp-ER-fWM"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="iGy-V7-EbK"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="EtB-1p-B7H" id="FwC-2t-7hh"/>
                         <outlet property="textField" destination="ibe-8p-Nib" id="8ru-SU-uNj"/>
@@ -84,5 +86,41 @@
             </objects>
             <point key="canvasLocation" x="-105" y="28.75"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="uTz-sH-0hL">
+            <objects>
+                <viewController id="xQo-6h-FP6" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="SCq-dy-fVl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="eQi-Cg-Vpe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zc-oz-gyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.5" y="710"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MU4-kH-Ppc">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2kM-4d-oj3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gu6-B9-6xg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xQo-6h-FP6" kind="relationship" relationship="viewControllers" id="CDK-Gj-MTM"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Idf-td-KcH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPt-7F-BDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-379" y="720"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="48" height="32"/>
+        <image name="MapIcon" width="48" height="32"/>
+    </resources>
 </document>

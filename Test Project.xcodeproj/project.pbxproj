@@ -14,6 +14,7 @@
 		129B695C2028056100C38CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129B695A2028056100C38CBD /* LaunchScreen.storyboard */; };
 		129B69672028056100C38CBD /* Test_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B69662028056100C38CBD /* Test_ProjectTests.swift */; };
 		129B69722028056100C38CBD /* Test_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129B69712028056100C38CBD /* Test_ProjectUITests.swift */; };
+		B805B0E72033ABF5001F5DF7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B805B0E62033ABF5001F5DF7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		129B696D2028056100C38CBD /* Test ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		129B69712028056100C38CBD /* Test_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_ProjectUITests.swift; sourceTree = "<group>"; };
 		129B69732028056100C38CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B805B0E62033ABF5001F5DF7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B805B0E72033ABF5001F5DF7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				129B69652028056100C38CBD /* Test ProjectTests */,
 				129B69702028056100C38CBD /* Test ProjectUITests */,
 				129B694F2028056100C38CBD /* Products */,
+				B805B0E52033ABF4001F5DF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				129B69732028056100C38CBD /* Info.plist */,
 			);
 			path = "Test ProjectUITests";
+			sourceTree = "<group>";
+		};
+		B805B0E52033ABF4001F5DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B805B0E62033ABF5001F5DF7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
