@@ -89,16 +89,12 @@
         <!--Map-->
         <scene sceneID="uTz-sH-0hL">
             <objects>
-                <viewController id="xQo-6h-FP6" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="SCq-dy-fVl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                <viewController id="xQo-6h-FP6" customClass="MapViewController" customModule="Test_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="eQi-Cg-Vpe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zc-oz-gyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292.5" y="710"/>
+            <point key="canvasLocation" x="683" y="823"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MU4-kH-Ppc">
